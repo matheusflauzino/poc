@@ -14,9 +14,21 @@ app.get("/maps", function (req, res) {
       lat: -0.935586,
       lon: -49.63554,
     },
+  ];
+
+  res.send(JSON.stringify(dados));
+});
+
+app.get("/users", function (req, res) {
+  var dados = [
     {
-      lat: -2.485874,
-      lon: -43.128493,
+      name: "Matheus Flauzino",
+    },
+    {
+      name: "Rafael Durelli",
+    },
+    {
+      name: "Letícia Amaral",
     },
   ];
 
